@@ -193,6 +193,7 @@ export default class CanvasDraw extends PureComponent {
     context.globalCompositeOperation = "destination-over";
 
     // If "useBgImage" has been set to true, this takes precedence over the background colour parameter
+    this.applyView();
     if (useBgImage) {
       if (!this.props.imgSrc) return "Background image source not set";
 
