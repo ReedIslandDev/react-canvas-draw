@@ -286,7 +286,7 @@ export class TouchPanState {
     }
 
     const ref = this.scaleOrPanState;
-    const { centroid, distance } = ref.recentMetrics = ref.getTouchMetrics(e);
+    const { centroid } = ref.recentMetrics = ref.getTouchMetrics(e);
 
     const dx = centroid.clientX - ref.start.centroid.clientX;
     const dy = centroid.clientY - ref.start.centroid.clientY;
